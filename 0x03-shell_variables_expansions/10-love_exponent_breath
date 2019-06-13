@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e "$((BREAD**LOVE))\n"
+echo "$((BREAD**LOVE))"
