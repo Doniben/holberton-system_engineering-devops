@@ -1,2 +1,2 @@
 #!/bin/bash
-find "$PATH" -mindepth 1 -type d -print| wc -l
+echo $PATH | tr -s ":" "\n" | wc -l
