@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-ps auxf
+ps -U root -u root u -H
