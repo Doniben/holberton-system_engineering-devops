@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-ps -U root -u root u -H
+# script that displays a list of currently running processes.
+ps axuf
