@@ -1,3 +1,7 @@
 !#/usr/bin/env bash
 # Bash script that displays a text indefinitely
-while :; do echo "To infinity and beyond"; sleep 1; done
+while :
+do
+      echo "To infinity and beyond"
+      sleep 1
+done
