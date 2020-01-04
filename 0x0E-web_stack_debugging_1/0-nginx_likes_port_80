@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+sudo sed -i "/slisten 8080 default_server;/listen 80 default_server;/i" /etc/nginx/sites-enabled/default
+sed -i "/slisten \[::\]:8080 default_server ipv6only=on;/listen [::]:80 default_server ipv6only=on;/i" /etc/nginx/sites-enabled/default
+sudo service nginx restart
