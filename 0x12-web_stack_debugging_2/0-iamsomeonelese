@@ -1,0 +1,3 @@
+#!/bin/bash
+# Script to change the sudo user
+sudo -u "$1" whoami
