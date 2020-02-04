@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" GEtting api information """
+""" Getting api information """
 
 import requests
 import sys
@@ -22,6 +22,9 @@ for task in imported_tasks:
             completed_count += 1
             tasks.append(task.get('title'))
 
-print ("Employee {} is done with tasks({}/{})".format(imported_users,
+print ("Employee {} is done with tasks({}/{}):".format(imported_users,
                                                       completed_count,
                                                       todos_count))
+
+for task_lines in tasks:
+    print("\t {}".format(task_lines))
