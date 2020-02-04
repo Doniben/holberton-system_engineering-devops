@@ -20,4 +20,4 @@ for task in imported_tasks:
         if task.get('completed') is True:
             tasks.append(task.get('title'))
 
-print ("Employee {} is done with tasks({}/{})".format(tasks, user, completed_count))
+print ("Employee {} is done with tasks({}/{})".format(imported_users, user, completed_count))
