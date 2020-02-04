@@ -13,11 +13,15 @@ imported_tasks = request_td.json()
 
 tasks = []
 completed_count = 0
+todos_count = 0
 
 for task in imported_tasks:
     if task.get('userId') == int(sys.argv[1]):
-        completed_count += 1
+        todos_count += 1
         if task.get('completed') is True:
+            completed_count += 1
             tasks.append(task.get('title'))
 
-print ("Employee {} is done with tasks({}/{})".format(imported_users, user, completed_count))
+print ("Employee {} is done with tasks({}/{})".format(imported_users,
+                                                      completed_count,
+                                                      todos_count))
