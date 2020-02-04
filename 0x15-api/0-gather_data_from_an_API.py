@@ -23,8 +23,8 @@ for task in imported_tasks:
             tasks.append(task.get('title'))
 
 print ("Employee {} is done with tasks({}/{}):".format(imported_users,
-                                                      completed_count,
-                                                      todos_count))
+                                                       completed_count,
+                                                       todos_count))
 
 for task_lines in tasks:
     print("     {}".format(task_lines))
