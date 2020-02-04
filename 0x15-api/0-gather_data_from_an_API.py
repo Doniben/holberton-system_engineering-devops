@@ -29,7 +29,7 @@ try:
                                                            todos_count))
 
     for task_lines in tasks:
-        print("     {}".format(task_lines))
+        print("\t {}".format(task_lines))
 
 except Exception as err:
     pass
