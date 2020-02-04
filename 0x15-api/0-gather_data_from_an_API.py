@@ -27,4 +27,4 @@ print ("Employee {} is done with tasks({}/{}):".format(imported_users,
                                                       todos_count))
 
 for task_lines in tasks:
-    print("\t {}".format(task_lines))
+    print("     {}".format(task_lines))
