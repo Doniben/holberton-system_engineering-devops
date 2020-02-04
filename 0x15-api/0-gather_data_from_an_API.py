@@ -16,8 +16,8 @@ completed_count = 0
 
 for task in imported_tasks:
     if task.get('userId') == int(sys.argv[1]):
+        completed_count += 1
         if task.get('completed') is True:
-            completed += 1
             tasks.append(task.get('title'))
 
-print ("Employee {} is done with tasks({}/{})".format(task, user, completed))
+print ("Employee {} is done with tasks({}/{})".format(tasks, user, completed_count))
