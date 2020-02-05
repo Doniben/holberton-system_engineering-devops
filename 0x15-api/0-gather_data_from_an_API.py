@@ -5,7 +5,7 @@ Getting api information
 import requests
 import sys
 
-try:
+if __name__ == "__main__":
 
     user = 'https://jsonplaceholder.typicode.com/users/' + sys.argv[1]
     todos = 'https://jsonplaceholder.typicode.com/todos'
@@ -31,6 +31,3 @@ try:
 
     for task_lines in tasks:
         print("\t {}".format(task_lines))
-
-except Exception as err:
-    pass
