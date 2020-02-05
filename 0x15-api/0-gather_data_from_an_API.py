@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-# Getting api information
-
+"""
+Getting api information
+"""
 import requests
 import sys
 
